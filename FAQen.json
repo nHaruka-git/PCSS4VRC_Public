@@ -38,5 +38,9 @@
   {
     "Q": "Shadows appear thin or 'shrunk' (especially on fingers)",
     "A": "This occurs when the ShadowNormalBias value is too high. Please lower the ShadowNormalBias value or create a BiasMask."
+  },
+  {
+    "Q": "Shadows look unusually distorted or messy",
+    "A": "The mesh normals might be inverted. Please ensure the normal directions are correct by using the shader's normal inversion/flip feature or other appropriate tools."
   }
 ]
