@@ -1,7 +1,7 @@
 [
   {
     "Q": "Material error occurs",
-    "A": "Please ensure you are using lilToon v2.0 or later, or Poiyomi v9.0.54 or later. Reimporting materials or clearing the shader cache may also resolve the issue."
+    "A": "Please ensure you are using lilToon v2.0 or later, or Poiyomi v9.0.54 or later. Reimporting materials or clearing the shader cache may also resolve the issue. Please also verify that the material name does not contain any special characters such as symbols."
   },
   {
     "Q": "Expression Menu is not working",
