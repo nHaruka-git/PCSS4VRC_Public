@@ -1,50 +1,42 @@
 [
   {
-    "Q": "マテリアルエラーになる",
-    "A": "lilToonであればVer2.0以上、Poiyomiであればver9.0.54以上であることを確認してください。マテリアルのReimportやシェーダーキャッシュの削除で直ることもあります。"
+    "Q": "Material error occurs",
+    "A": "Please ensure you are using lilToon v2.0 or later, or Poiyomi v9.0.54 or later. Reimporting materials or clearing the shader cache may also resolve the issue."
   },
   {
-    "Q": "ExpressionMenuが機能しない",
-    "A": "アニメーションが壊れている可能性があります。\"Assets/nHaruka/PCSS4VRC\"フォルダを削除して、インポートしなおしてみてください。"
-  }
-  ,
+    "Q": "Expression Menu is not working",
+    "A": "The animations might be corrupted. Try deleting the \"Assets/nHaruka/PCSS4VRC\" folder and then re-importing the package."
+  },
   {
-    "Q": "Playモード時に真っ暗になる",
-    "A": "AV3Emulator（VCCから追加できます）を入れないと（GestureManager不可）、UnityEditor上ではPlayMode時に真っ暗になります。これは確認用のEditorOnlyライトが削除された上、アバターのレイヤーをVRChatと同等に設定しないと、ライトに照らされないためです。"
-  }
-   ,
+    "Q": "The screen goes pitch black in Play Mode",
+    "A": "In the Unity Editor's Play Mode, the screen will appear black unless you use AV3Emulator (available via VCC); Gesture Manager alone is not sufficient. This happens because EditorOnly lights used for previewing are removed, and the avatar will not be illuminated unless its layers are configured identically to VRChat."
+  },
   {
-    "Q": "影がカクカクする",
-    "A": "VRChat上の場合グラフィック設定の影品質の設定を見直してください。"
-  }
-  ,
+    "Q": "Shadows appear jagged or pixelated",
+    "A": "If this occurs in VRChat, please check and adjust your Shadow Quality settings in the graphics menu."
+  },
   {
-    "Q": "影にノイズが出る",
-    "A": "ある程度は仕様です。マテリアルプロパティのサンプリング数を挙げることで多少解消しますが、負荷が上がることに注意してください。"
-  }
-     ,
+    "Q": "Noise appears in the shadows",
+    "A": "This is partially by design. Increasing the sampling count in the material properties can mitigate it, but be aware that this will increase the performance load."
+  },
   {
-    "Q": "影がつかない/真っ暗になる",
-    "A": "RenderQueueが2500以上のマテリアルで発生します。RenderQueueを調整してください。"
-  }
-  ,
+    "Q": "Shadows don't appear / Material turns pitch black",
+    "A": "This occurs with materials that have a Render Queue of 2500 or higher. Please adjust the Render Queue."
+  },
   {
-    "Q": "透明マテリアルで違和感",
-    "A": "Unityの仕様上、透明マテリアルは影を受け取らない/落とさないようになっています。そこをどうにかやりくりしているので、ご容赦ください。場合によっては試行錯誤が必要です。"
-  }
-     ,
+    "Q": "Transparent materials look unnatural",
+    "A": "Due to Unity's specifications, transparent materials normally do not receive or cast shadows. We have implemented a workaround for this, so please understand it may not be perfect. Some trial and error may be required in certain cases."
+  },
   {
-    "Q": "ほほ染めなどが黒ずむ",
-    "A": "CastMaskに真っ黒なテクスチャを入れたりすると改善することが多いですが、面倒であればそのマテリアルだけリアル影マテリアルじゃないマテリアルに戻すと手っ取り早いです。"
-  }
-  ,
+    "Q": "Blush or facial expressions appear darkened",
+    "A": "This can often be improved by assigning a solid black texture to the CastMask. If that is too much trouble, the quickest fix is to revert only that specific material to a non-PCSS (original) material."
+  },
   {
-    "Q": "Poiyomiでsampler関連のコンパイルエラー",
-    "A": "テクスチャ―サンプラー数が多すぎることに起因しています。不必要なモジュールはOffにしてテクスチャ―スロットを節約してください。"
-  }
-  ,
+    "Q": "Sampler-related compilation error in Poiyomi",
+    "A": "This is caused by exceeding the maximum number of texture samplers. Please turn off unnecessary modules to save texture slots."
+  },
   {
-    "Q": "影がShrinkしたように細くなる（特に指）",
-    "A": "ShadowNormalBiasの値が高いと発生します。ShadowNormalBiasの値を下げるか、BiasMaskを作成してください。"
+    "Q": "Shadows appear thin or 'shrunk' (especially on fingers)",
+    "A": "This occurs when the ShadowNormalBias value is too high. Please lower the ShadowNormalBias value or create a BiasMask."
   }
 ]
