@@ -28,6 +28,10 @@
     "A": "Due to Unity's specifications, transparent materials normally do not receive or cast shadows. We have implemented a workaround for this, so please understand it may not be perfect. Some trial and error may be required in certain cases."
   },
   {
+    "Q": "Changes to the material are not reflected. Settings revert.",
+    "A": "Changes to the original material are not automatically reflected in the material for PCSS. Please make changes in the preview state or play mode."
+  },
+  {
     "Q": "Blush or facial expressions appear darkened",
     "A": "This can often be improved by assigning a solid black texture to the CastMask. If that is too much trouble, the quickest fix is to revert only that specific material to a non-PCSS (original) material."
   },
